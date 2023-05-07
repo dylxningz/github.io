@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mystyle.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/myscripts.js"></script>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|ITSC3135|Dylan Greene|Drowsy Groundhog| Calculator |</title>
+    
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <h1>Calculator</h1>
+        <input type="text" id="result" disabled>
+        <br>
+        <input type="button" value="1" onclick="append('1')">
+        <input type="button" value="2" onclick="append('2')">
+        <input type="button" value="3" onclick="append('3')">
+        <input type="button" value="+" onclick="append('+')">
+        <br>
+        <input type="button" value="4" onclick="append('4')">
+        <input type="button" value="5" onclick="append('5')">
+        <input type="button" value="6" onclick="append('6')">
+        <input type="button" value="-" onclick="append('-')">
+        <br>
+        <input type="button" value="7" onclick="append('7')">
+        <input type="button" value="8" onclick="append('8')">
+        <input type="button" value="9" onclick="append('9')">
+        <input type="button" value="*" onclick="append('*')">
+        <br>
+        <input type="button" value="0" onclick="append('0')">
+        <input type="button" value="C" onclick="clearResult()">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="/" onclick="append('/')">
+        <br>
+        <script>
+            function append(value) {
+                document.getElementById('result').value += value;
+            }
+            
+            function clearResult() {
+                document.getElementById('result').value = '';
+            }
+            
+            function calculate() {
+                let result = eval(document.getElementById('result').value);
+                document.getElementById('result').value = result;
+            }
+        </script>
+    </main>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+</body>
+</html>

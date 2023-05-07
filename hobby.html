@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/myscripts.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|ITSC3135|Dylan Greene|Drowsy Groundhog| FILL IN HERE |</title>
+
+    <style>
+        body {
+            background-color: #0c2864;
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 0 500px;
+        }
+
+        h2 {
+            padding-bottom: 30px;
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+
+        .hobby img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: #bc8ee2
+        }
+
+        .caption p2 {
+            color: #bc8ee2;
+        }
+
+        hr {
+            color: #bc8ee2;
+        }
+
+        .picture-row img {
+            display: inline;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            width: auto !important;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        thead {
+            background-color: purple;
+            color: white;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f8f8f8;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e8e8e8;
+        }
+
+        tbody td {
+            border-top: 1px solid #ddd;
+            border-bottom: none;
+            color: #0c2864;
+        }
+
+        tbody td:first-child {
+            border-left: 1px solid #ddd;
+        }
+
+        tbody td:last-child {
+            border-right: 1px solid #ddd;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 1px solid #ddd;
+
+        }
+
+    
+    </style>
+    <script>
+        function setVisible(id) {
+            let sections = $(".hobby");
+            sections.hide(); // hide all sections
+            $("#" + id).show(); // show the section with the specified ID
+        }
+
+        $(document).ready(function () {
+            setVisible("home"); // show the "home" section by default
+        });</script>
+        <h1>Hobby</h1>
+
+</head>
+
+<body>
+    <nav>
+        <p>
+            <a href="#" onclick="setVisible('home')">Home</a> |
+            <a href="javascript:setVisible('about')" onclick="preventDefault">About</a> |
+            <a href="javascript:setVisible('games')" onclick="preventDefault">Games</a> |
+            <a href="javascript:setVisible('where')" onclick="preventDefault">Where</a> |
+            <a href="javascript:setVisible('best')" onclick="preventDefault">The Best</a> |
+
+        </p>
+    </nav>
+
+
+    <main>
+        <section id="home" class="hobby">
+            <h2>Home</h2>
+
+            <p> This is our website for lovers of select video games.</p>
+
+            <p> If you love video games like we do but absolutley hate others than you have found the perfect community
+                for you. Please check out all of the pages at the top to see what we love and have to offer for you!</p>
+            <img id="hobby" src="images/overwatch.jpg" alt="Agnelical Zielger">
+        </section>
+
+        <section id="about" class="hobby">
+            <h2>About</h2>
+
+
+            <p>Gaming has been a huge part of my life for as long as I can remember. It all started when I was a kid and
+                my parents got me my first console. I was immediately hooked and spent hours on end playing my favorite
+                games. As I grew older, my love for gaming only grew stronger. It became a way for me to unwind after a
+                long day and escape into different worlds and realities. I found myself drawn to games with complex
+                storylines and immersive gameplay, and I loved the feeling of getting lost in a game for hours on end.
+
+                What I love most about gaming is the sense of community it brings. I've met some of my closest friends
+                through gaming, and I love the feeling of bonding over a shared passion. Whether it's playing online
+                with friends or attending gaming conventions, there's nothing quite like the sense of camaraderie that
+                comes with being a part of the gaming community.
+
+                Overall, gaming has brought me so much joy over the years, and I can't imagine my life without it. From
+                the rush of excitement that comes with discovering a new game to the satisfaction of beating a
+                challenging level, gaming has truly captured my heart and continues to be a huge part of who I am today.
+            </p>
+
+            <div class="image">
+                <img src="images/Gamers.jpg" alt="pic" />
+                <span class="caption">
+                    <p2>Everything I wanna be</p2>
+                </span>
+            </div>
+
+            <p>Video games saved my life by giving me a sense of purpose and an escape from reality. During a difficult
+                time, gaming provided me with a distraction and a way to cope. It gave me something to look forward to
+                and helped me find a sense of joy and fulfillment.</p>
+
+
+
+        </section>
+
+        <section id="games" class="hobby">
+            <h2>Top Games</h2>
+            <h3>These are our top games!</h3>
+
+            <h3>Overwatch</h3>
+
+            <div class="image">
+                <img src="images/overwatch-1.jpg" alt="pic" />
+                <span class="caption">
+                    <p2>Team FPS game</p2>
+                </span>
+            </div>
+            <hr>
+            <h3>Naraka BladePoint</h3>
+            <div class="image">
+                <img src="images/naraka.jpg" alt="pic" />
+                <span class="caption">
+                    <p2>Melee Battle Royal</p2>
+                </span>
+            </div>
+            <hr>
+            <h3>The Sims 4</h3>
+            <div class="image">
+                <img src="images/sims4.jpg" alt="pic" />
+                <span class="caption">
+                    <p2>Creativity as its finest</p2>
+                </span>
+            </div>
+            <hr>
+        </section>
+
+        <section id="where" class="hobby">
+            <h2>Where</h2>
+            <p>There's a special sense of satisfaction that comes with finding something you've been searching for -
+                whether it's a lost item or a new passion. It's a feeling of triumph and fulfillment that makes all the
+                effort worth it. - Gamers</p>
+
+            <div class="picture-row">
+                <a href="fake.html"><img src="images/discord.png" alt="Picture 1" width="100" height="100"></a>
+                <a href="fake.html"><img src="images/twitter.png" alt="Picture 2" width="100" height="100"></a>
+                <a href="fake.html"><img src="images/link.png" alt="Picture 3" width="100" height="100"></a>
+            </div>
+
+        </section>
+
+        <section id="best" class="hobby">
+            <h2>Best Platers in the world</h2>
+            <p> Below is a list of the best players far and near</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                        <th>Discord</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Support</td>
+                        <td>john.doe@gamers.com</td>
+                        <td>john#1234</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Tank</td>
+                        <td>jane.smith@gamers.com</td>
+                        <td>jane#5678</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Johnson</td>
+                        <td>DPS</td>
+                        <td>mark.johnson@gamers.com</td>
+                        <td>mark#9876</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Lee</td>
+                        <td>Support</td>
+                        <td>sara.lee@gamers.com</td>
+                        <td>sara#4321</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Williams</td>
+                        <td>Tank</td>
+                        <td>mike.williams@gamers.com</td>
+                        <td>mike#2468</td>
+                    </tr>
+                    <tr>
+                        <td>Karen Brown</td>
+                        <td>DPS</td>
+                        <td>karen.brown@gamers.com</td>
+                        <td>karen#1357</td>
+                    </tr>
+                    <tr>
+                        <td>David Lee</td>
+                        <td>Support</td>
+                        <td>david.lee@gamers.com</td>
+                        <td>david#7890</td>
+                    </tr>
+                    <tr>
+                        <td>Adam Smith</td>
+                        <td>Tank</td>
+                        <td>adam.smith@gamers.com</td>
+                        <td>adam#3691</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>DPS</td>
+                        <td>emily.davis@gamers.com</td>
+                        <td>emily#2463</td>
+                    </tr>
+                    <tr>
+                        <td>Andrew Lee</td>
+                        <td>Support</td>
+                        <td>andrew.lee@gamers.com</td>
+                        <td>andrew#4658</td>
+                    </tr>
+                    <tr>
+                        <td>Lisa Chen</td>
+                        <td>Tank</td>
+                        <td>lisa.chen@gamers.com</td>
+                        <td>lisa#5894</td>
+                    </tr>
+                    <tr>
+                        <td>Kevin Kim</td>
+                        <td>DPS</td>
+                        <td>kevin.kim@gamers.com</td>
+                        <td>kevin#9871</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p> You should defenitly contact them and get great tips to improve.</p>
+
+
+
+
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-container"></div> <a href="index.html">Back to ITSC Homepage</a>
+    </footer>
+</body>
+
+</html>

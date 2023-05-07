@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/myscripts.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|ITSC3135|Dylan Greene|Drowsy Groundhog| polygons |</title>
+
+</head>
+<div id="navbar-container"></div>
+<script>
+    function identifyPolygon() {
+        let sides = parseInt(document.getElementById('sides').value);
+        let polygon = '';
+        switch (sides) {
+            case 1:
+                polygon = 'Henagon';
+                break;
+            case 2:
+                polygon = 'Digon';
+                break;
+            case 3:
+                polygon = 'Triangle';
+                break;
+            case 4:
+                polygon = 'Quadrilateral';
+                break;
+            case 5:
+                polygon = 'Pentagon';
+                break;
+            case 6:
+                polygon = 'Hexagon';
+                break;
+            case 7:
+                polygon = 'Heptagon';
+                break;
+            case 8:
+                polygon = 'Octagon';
+                break;
+            case 9:
+                polygon = 'Nonagon';
+                break;
+            case 10:
+                polygon = 'Decagon';
+                break;
+            default:
+                polygon = 'Invalid number of sides';
+                break;
+        }
+        document.getElementById('polygon-type').textContent = polygon;
+    }
+</script>
+
+<body>
+    <ul>
+
+    </ul>
+    <main>
+        <h1>The Drowsey Groundhog would love for you to enter a number for a polygon!</h1>
+        <form>
+            <label for="sides">Enter number of sides:</label>
+            <input type="number" id="sides" name="sides" min="1" max="10">
+            <button type="button" onclick="identifyPolygon()">Identify Polygon</button>
+        </form>
+        <p id="polygon-type"></p>
+    </main>
+
+    <footer>
+        <div id="footer-container"></div>
+    </footer>
+</body>
+
+</html>

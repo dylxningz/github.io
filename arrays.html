@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mystyle.css">
+<script src = "scripts/arrayscript.js" defer> </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/myscripts.js"></script>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|ITSC3135|Dylan Greene|Drowsy Groundhog| Arrays |</title>
+    
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <h2>Arrays</h2>
+       
+        <label class="label_width">Enter Name:<input type="text" id="name"  required></label>
+        <br>
+        <label class="label_width">Enter Salary:<input type="number" id="salary" required></label>
+        <br><br> 
+        <div class="button-container">
+        <button onclick="addSalary()">Add Salary</button>
+        <br><br>
+        <button onclick="displayResults()">Display Results</button>
+        <br><br>
+        <button onclick="displaySalary()">Display Salary</button>
+        <br><br>
+        </div>
+        <form class="label_array">
+            <select id = "myList">
+            <option>Select Employee Name:</option>
+            <option>Sarah</option>
+            <option>Mike</option>
+            <option>Levi</option>
+            <option>Kait</option>
+            <option>Tiffany</option>
+            </select>
+        </form>
+    
+        <div id = "results"></div>
+        <br>
+        <table id = "results_table"></table>
+        
+    
+        <script src = "scripts/arrays.js" defer> </script>
+    </main>
+
+    <footer> 
+        <div id="footer-container"></div>
+    </footer>
+</body>
+</html>

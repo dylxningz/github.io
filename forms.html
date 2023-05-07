@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/myscripts.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS 3135| Dylan Greene | Drowsey Groundhog | Forms |</title>
+    
+</head>
+<body>
+  <div id="navbar-container"></div>
+<h2> Form</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="phonenumber">Phonenumber:</label>
+    <input type="text" id="phonenumber" phonenumber="phonenumber"><br>
+    <label for="emailadress">Email Adress</label>
+    <input type="text" id="emailadress" emailadress="emailadress"> <br>
+    <label for="selectnumber">Select a number you like</label>
+    <select id="selectnumber" name="selectnumber">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select><br>
+    <label for="isuserhappy">Are you happy?</label>
+    <input type="checkbox" name="isuserhappy" id="isuserhappy" value="Yes!"><br>
+    <label for="color">Favorite Color</label>
+    <input type="radio" id="blue" name="favcolor" value="Blue">
+    <input type="radio" id="red" name="favecolor" value="Red">
+    <input type="radio" name="favcolor" id="purple" value="Purple"><br>
+    <button type="button" onclick="alert('Submitted')">Submit</button>
+    <button type="button" onclick="alert('form reset')">Reset</button>
+
+
+  </form>
+</body>
+<footer> 
+  <div id="footer-container"></div>
+</footer>
+</html>

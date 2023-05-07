@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mystyle.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/myscripts.js"></script>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|ITSC3135|Dylan Greene|Drowsy Groundhog| Slideshow |</title>
+    
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <h1>Slideshow</h1>
+        <h2>Please click one of the images below to view it and click close to close the image.</h2>
+            <div class="gallery">
+              <button class="gallery-button" data-src="images/slideshow/slideim1.jpg">Image 1</button>
+              <button class="gallery-button" data-src="images/slideshow/slideim2.jpg">Image 2</button>
+              <button class="gallery-button" data-src="images/slideshow/slideim3.jpg">Image 3</button>
+              <button class="gallery-button" data-src="images/slideshow/slideim4.jpg">Image 4</button>
+              <button class="gallery-button" data-src="images/slideshow/slideim5.jpg">Image 5</button>
+              <button class="gallery-button" data-src="images/slideshow/slideim6.jpg">Image 6</button>
+            </div>
+            
+            <script>
+              $(document).ready(function() {
+                // Set up the button click events
+                $(".gallery-button").click(function() {
+                  var src = $(this).data("src");
+                  showModal(src);
+                });
+              });
+            
+              // Function to show the modal with the full-size image
+              function showModal(src) {
+                var html = '<div class="modal-overlay">';
+                html += '<div class="modal">';
+                html += '<img src="' + src + '">';
+                html += '<button class="modal-close">Close</button>';
+                html += '</div>';
+                html += '</div>';
+                $("body").append(html);
+            
+                // Set up the close button click event
+                $(".modal-close").click(function() {
+                  $(".modal-overlay").remove();
+                });
+              }
+            </script>
+    </main>
+
+    <footer> 
+        <div id="footer-container"></div>
+    </footer>
+</body>
+</html>

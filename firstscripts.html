@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mystyle.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/myscripts.js"></script>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|ITSC3135|Dylan Greene|Drowsy Groundhog| FILL IN HERE |</title>
+    <script>
+    function showDateTime() {
+          var currentDate = new Date();
+          var date = currentDate.getDate();
+          var month = currentDate.getMonth() + 1;
+          var year = currentDate.getFullYear();
+          var hours = currentDate.getHours();
+          var minutes = currentDate.getMinutes();
+          var seconds = currentDate.getSeconds();
+          var day = currentDate.getDay();
+  
+          var daysOfWeek = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ];
+          
+          var datetime = document.getElementById("datetime");
+          datetime.innerHTML = "Today is " + daysOfWeek[day] + ", " + date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+        }
+  
+        window.onload = function() {
+          showDateTime();
+        };
+      </script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <h1>First Scripts</h1>
+        <h3 id="datetime"></h3>
+  
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="mood">How are you feeling?</label>
+          <input type="text" id="mood" name="mood" required>
+  
+          <button type="button" onclick="greetUser()">Submit</button>
+        </form>
+  
+        <h3 id="greeting"></h3>
+  
+      
+    </main>
+
+    <footer> 
+      <div id="footer-container"></div>
+  </footer>
+</body>
+</html>
